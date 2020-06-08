@@ -13,8 +13,12 @@ Get the cert at https://petclinic-petclinic.apps.cluster-teg.sandbox1459.opentlc
 
 `docker run --net=host -e REQUEST_URI=https://petclinic-petclinic.apps.cluster-teg.sandbox1459.opentlc.com getting-started-java` 
 
-Will work
+In another terminal run `curl http://localhost:8080/hello`
+
+This will work
 
 `docker run --net=host -e REQUEST_URI=https://petclinic-petclinic.apps.cluster-teg.sandbox1459.opentlc.com getting-started-java` 
 
-Will fail with a `PKIX path building failed` message.
+In another terminal run `curl http://localhost:8080/hello`
+
+This will fail with a `PKIX path building failed` message.
